@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Qwitcher+Grypen:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(90deg,#ddd,#eee) ;
+    display: grid;
+    place-content: center;
+}
+.container{
+    width: 350px;
+    max-height: 450px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.30);
+}
+.container .title{
+    width: 100%;
+    height: 60px;
+    display: grid;
+    place-content: center;
+}
+.container .title .info{
+    font-size: 2em;
+    color: black;
+    font-family: Libre Baskerville,sans-serif;
+    transition: all ease-in 0.4s;
+    animation: animate1 linear  0.3s;
+
+}
+@keyframes animate1{
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(350deg);
+    }
+}
+.container form{
+    width: 100%;
+    padding: 15px 40px;
+
+}
+.container form .form-field{
+    width: 100%;
+    margin-bottom: 13px;
+}
+.container form .form-field label{
+     font-size: 15px;
+     font-weight: 400;
+}
+.container form .form-field .input-field{
+    width: 100%;
+    margin-top: 5px;
+    background:navy;
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+.container form .form-field .input-field i {
+    width: 10%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+}
+.container form .form-field .input-field input{
+    width: 90%;
+    outline: none;
+    border: none;
+    background: white;
+    padding: 5px;
+}
+.container form .action-field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+.container form .action-field .action{
+    width: 120px;
+    height: 35px;
+    outline: none;
+    color: white;
+    background: navy;
+    border: 2px solid navy;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease-in 0.4s;
+}
+.container form .action-field .btn{
+    width: 120px;
+    height: 35px;
+    outline: none;
+    color: white;
+    background: navy;
+    border: 2px solid navy;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease-in 0.4s;
+}
+.container form .action-field .btn:hover{
+    color: navy;
+    background: white;
+}
+.container form .action-field .action:hover{
+    color: navy;
+    background: white;
+}
+#fullnamefield{
+    transition: all ease-in 0.4s;
+    max-height: 0px;
+    overflow: hidden;
+    padding: 0;
+}
+#confirmPasswordfield{
+    transition: all ease-in 0.4s;
+    max-height: 2px;
+    overflow: hidden;
+    padding: 0;
+}
